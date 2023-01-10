@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora de Imc</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="Estilo.css">
+	<script src="script.js" defer></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/Estilo.css">
+	<link rel="stylesheet" href="assets/fonts/css/all.min.css">
+</head>
+<body>
+	<div class="conteiner">
+	<div class="conteiner-principal">
+			<p class="texto-informativo-titulo">IMC</p>
+				<div class="conteiner-secundario-informativo">
+					<p class="texto-informativo">
+					IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+
+					<p class="texto-informativo">	O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+
+					<p class="texto-informativo">	Quer descobrir seu IMC? Insira seu peso e sua altura nos campos ao lado direito e compare com os índices da tabela. Importante! : siga os exemplos e use pontos como separadores.
+					</p>
+				</div>
+				<div class="conteiner-tabela-informativa">
+					<table class="tabela-informativa" cellspacing="0">
+						<thead>
+							<tr>
+								<td colspan="3" class="principal-tabela">
+									Veja a interpretação do IMC
+								</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="tabela-cal-negrito">
+								<td>
+									IMC
+								</td>
+								<td>
+									Classificação
+								</td>
+								<td style="text-align: center;">
+									Obsesidade
+									<small>(Grau)</small>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Menor que 18,5
+								</td>
+								<td>
+									Magreza
+								</td>
+								<td class="Obsesidade">
+									0
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Entre 18,5 e 24,9
+								</td>
+								<td>
+									Normal
+								</td>
+								<td class="Obsesidade">
+									0
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Entre 25 e 29,9
+								</td>
+								<td>
+									Sobrepeso
+								</td>
+								<td class="Obsesidade">
+									I
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Entre 30 e 39,9
+								</td>
+								<td>
+									Obesidade
+								</td>
+								<td class="Obsesidade">
+									II
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Maior que 40,0
+								</td>
+								<td>
+									Obesidade grave
+								</td>
+								<td class="Obsesidade">
+									III
+								</td>
+							</tr>
+						</tbody>
+						
+					</table>
+				</div>
+		</div>
+		<form id="formulario">
+		<div class="conteiner-principal">
+		
+			<p class="texto-principal">Insira seu peso e sua altura e calcule seu IMC</p>
+			<div class="conteiner-secundario">
+				<p class="texto-secundario">Insira seu peso ( ex. : 69.2)</p>
+				<input type="range" name="peso" min="0" max="300" class="range-peso range" id="range-peso" value="150" step="0.1">
+				<p class="texto-secundario">Peso (Kg)</p>
+				<input type="text" name="peso" class="caixa-de-texto" id="caixa-peso" placeholder="Digite seu peso" value="" required pattern="^[0-9]{0,3}[.][0-9]{0,2}$">
+			</div>
+			<div class="conteiner-terciario">
+				<p class="texto-secundario">Insira sua altura ( ex. : 1.70)</p>
+				<input type="range" name="altura" min="0" max="3" class="range-altura range" id="range-altura" value="" step="0.01">
+				<p class="texto-secundario">Altura (m)</p>
+				<input type="text" name="altura" class="caixa-de-texto" placeholder="Digite sua altura" required id="caixa-altura"required pattern="^[0-9]{0,3}[.][0-9]{0,2}$">
+			</div>
+			<div class="butoes">
+			<input type="submit" id="calcular" value="Calcular">
+			<input type="reset" id="calcular" value="Limpar">
+			<div id="resultado"></div>
+			</div>
+		</div>
+		</form>
+		</div>
+		    <div class="conteiner-redes-sociais">
+        <footer>
+            <div class="redes-sociais">
+            	<a href="https://github.com/Natanielima" class="icones">
+            		<i class="fa-brands fa-github icon">
+            		</i>
+            	</a>
+            	<a href="https://github.com/rafaelnpf" class="icones">
+            		<i class="fa-brands fa-linkedin-in icon">
+            		</i>
+            	</a>
+            	<a href="https://github.com/rafaelnpf" class="icones">
+            		<i class="fa-brands fa-instagram icon" >
+            		</i>
+            	</a>
+            	<a href="https://github.com/rafaelnpf" class="icones">
+            		<i class="fa-brands fa-pinterest icon">
+            		</i>
+            	</a>
+            	<a href="https://github.com/rafaelnpf" class="icones">
+            		<i class="fa-brands fa-tiktok icon">
+            		</i>
+            	</a>
+       
+            </div>
+        </footer>
+   			 </div>
+   			 <div class="nome-final">
+   			 	<p class="fa-regular fa-copyright"> Nataniel Lima © 2023</p>
+   			 </div>
+		
+		
+		
+</body>
+
+</html>
